@@ -34,11 +34,11 @@ class UserController extends GetxController {
       }
     } catch (e) {
       errorMessage.value = e.toString();
-      Get.snackbar(
-        'Error',
-        'Failed to load users: ${e.toString()}',
-        snackPosition: SnackPosition.BOTTOM,
-      );
+      // Get.snackbar(
+      //   'Error',
+      //   'Failed to load users: ${e.toString()}',
+      //   snackPosition: SnackPosition.BOTTOM,
+      // );
     } finally {
       isLoading.value = false;
     }
